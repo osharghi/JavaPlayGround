@@ -1,0 +1,1 @@
+To run the project, unzip the package, go to src and run QuicksortDemo.java
