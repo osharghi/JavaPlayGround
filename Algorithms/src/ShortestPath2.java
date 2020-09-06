@@ -73,6 +73,8 @@ public class ShortestPath2 {
 				
 				for(int v = 0; v<neighbors.length; v++)
 				{
+					// !visited[v] Because cycle
+					// dist[u] != Integer.MAX_VALUE that means there was no path to node U meaning there is no shortest path.
 					if(!visited[v] && (dist[u] + matrix[u][v] <= dist[v]) && matrix[u][v]!= 0 && dist[u] != Integer.MAX_VALUE)
 					{
 						dist[v] = dist[u] + matrix[u][v];
